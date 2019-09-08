@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TickyBot Clone</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
 
-        <script src="js/ticky.js"></script>
-    </body>
+<head>
+	<title>TickyBot Clone</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<!--Navbar section-->
+	<header>
+		<nav id="navbar">
+			<div id="navbar-container">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#slack">Add to Slack</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--End Navbar-->
+
+	<main>
+		<!--Home section-->
+		<section id="home">
+			<div id="container flex">
+				<div id="home-description">
+					<h1>TickyBot</h1>
+					<p>
+						Let your team manage their support tickets 100% inside Slack
+					</p>
+					<a class="btn" href="#">
+						<img src="images/slack-icon.svg" alt="slack-icon" />
+						<span>Add to <strong>Slack</strong></span>
+					</a>
+				</div>
+				<div id="home-image">
+					<img src="images/bot-logo.jpg" width="200px" height="200px" />
+				</div>
+			</div>
+		</section>
+		<!--End Home section-->
+
+		<!--About section-->
+		<section id="about">
+			<div id="container flex">
+				<h3>What is <strong>Ticky</strong>Bot</h3>
+				<div id="paragraph1">
+					<p>
+						<strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use
+						support tickets on Slack. This way, you don't need to leave your
+						beloved channel to assist your users, if you don't feel like it.
+					</p>
+				</div>
+				<div id="paragraph2">
+					<p>
+						With <strong>Ticky</strong>Bot you can easily check if you've
+						received new tickets, change their status, or write a reply, and
+						the ticket will instantly update itself on our site.
+					</p>
+				</div>
+				<div id="paragraph3">
+					<p>
+						Support requests shouldn't be handled through Slack's direct
+						messages.
+						<br />
+						<em>Image about someone asking silly questions and the workplace
+							admin asking him/her to open a support ticket so other admins
+							could look into issue.</em>
+					</p>
+				</div>
+			</div>
+		</section>
+		<!--End About section -->
+	</main>
+	<script src="js/ticky.js"></script>
+</body>
+
 </html>
