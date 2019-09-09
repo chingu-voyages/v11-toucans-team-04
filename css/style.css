@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika', sans-serif;
+  color: rgba(0, 0, 0, .75);
+}
+
+.container {
+  font-size: 1.25rem;
+  /* margin: 0 auto; */
+  /* padding: 0 1rem; */
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* Styling navbar */
+nav .container ul {
+  background-color: #40596b;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+nav .container ul li {
+  margin-right: 1rem;
+}
+
+nav .container ul li:last-of-type {
+  margin-right: 0;
+}
+
+nav .container ul li a {
+  text-decoration: none;
+  color: #ffd05a;
+}
+
+nav .container ul li a:hover {
+  color: #fff;
+}
+
+/* Styling Home section */
+#home {
+  background-color: #55c0ec;
+  min-height: calc(100vh - 12rem);
+  display: flex;
+  padding: 1rem;
+  /* width: 400px; */
+}
+
+.container-flex>* {
+  margin: 1rem;
+  min-width: 300px;
+  flex: 1;
+}
+
+#home-description {
+  text-align: center;
+}
+
+
+#home-description h1 {
+  color: rgba(0, 0, 0, .6);
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -.2rem;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+#home-description strong,
+.btn strong {
+  color: rgba(0, 0, 0, .65);
+  font-weight: 600;
+}
+
+#home-description p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  /* width: 250px; */
+}
+
+.btn {
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.75rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  max-width: 300px;
+  margin: 0 auto;
+  color: inherit;
+}
+
+.btn img {
+  margin: 0 1rem 0 0;
+}
+
+#home-logo {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
