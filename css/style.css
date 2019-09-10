@@ -139,6 +139,7 @@ nav .container ul li a:hover {
   line-height: 1.25rem;
   margin-bottom: 3rem;
   letter-spacing: -.1rem;
+  font-weight: 300;
 }
 
 .page-title:after {
