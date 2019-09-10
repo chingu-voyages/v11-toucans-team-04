@@ -57,18 +57,18 @@ nav .container ul li a:hover {
   background-color: #55c0ec;
   min-height: calc(100vh - 12rem);
   display: flex;
-  /* padding: 1rem; */
 }
 
 .container-flex>* {
   margin-bottom: 2rem;
-  min-width: 300px;
+  min-width: 320px;
   flex: 1;
 }
 
 #home-description {
   text-align: center;
   width: 200px;
+  padding: 1rem;
 }
 
 
@@ -78,7 +78,7 @@ nav .container ul li a:hover {
   margin-bottom: 2rem;
   letter-spacing: -.2rem;
   font-weight: 100;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 #home-description strong,
@@ -121,4 +121,9 @@ nav .container ul li a:hover {
   display: flex;
   justify-content: center;
   height: 100%;
+}
+
+/* Styling About section */
+#about {
+  min-height: 50vh;
 }
