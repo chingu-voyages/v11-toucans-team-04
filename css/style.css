@@ -156,6 +156,7 @@ nav .container ul li a:hover {
 #paragraph1 p,
 #paragraph2 p,
 #paragraph3 p {
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-top: 0;
 }
