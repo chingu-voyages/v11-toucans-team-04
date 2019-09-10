@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,8 +11,8 @@ body {
 
 .container {
   font-size: 1.25rem;
-  /* margin: 0 auto; */
-  /* padding: 0 1rem; */
+  margin: 0 auto;
+  width: 100%;
 }
 
 .container-flex {
@@ -24,10 +28,11 @@ body {
 nav .container ul {
   background-color: #40596b;
   list-style-type: none;
+  align-items: center;
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.2rem;
 }
 
 nav .container ul li {
@@ -52,18 +57,18 @@ nav .container ul li a:hover {
   background-color: #55c0ec;
   min-height: calc(100vh - 12rem);
   display: flex;
-  padding: 1rem;
-  /* width: 400px; */
+  /* padding: 1rem; */
 }
 
 .container-flex>* {
-  margin: 1rem;
+  margin-bottom: 2rem;
   min-width: 300px;
   flex: 1;
 }
 
 #home-description {
   text-align: center;
+  width: 200px;
 }
 
 
@@ -73,7 +78,7 @@ nav .container ul li a:hover {
   margin-bottom: 2rem;
   letter-spacing: -.2rem;
   font-weight: 100;
-  margin-top: 0;
+  margin-top: 25px;
 }
 
 #home-description strong,
@@ -86,9 +91,9 @@ nav .container ul li a:hover {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 100;
-  line-height: 1.25;
+  line-height: 2rem;
   margin-bottom: 2rem;
-  /* width: 250px; */
+  padding: 0 1rem;
 }
 
 .btn {
@@ -109,6 +114,7 @@ nav .container ul li a:hover {
 
 .btn img {
   margin: 0 1rem 0 0;
+  width: 2.5rem;
 }
 
 #home-logo {
