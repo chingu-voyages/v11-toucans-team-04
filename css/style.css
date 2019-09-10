@@ -61,7 +61,7 @@ nav .container ul li a:hover {
 
 .container-flex>* {
   margin-bottom: 2rem;
-  min-width: 300px;
+  min-width: 320px;
   flex: 1;
 }
 
@@ -143,7 +143,7 @@ nav .container ul li a:hover {
 
 .page-title:after {
   background-color: #55c0ec;
-  bottom: -195px;
+  bottom: -163px;
   content: "";
   height: 3px;
   left: 50%;
