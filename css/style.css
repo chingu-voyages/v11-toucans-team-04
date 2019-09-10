@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Signika', sans-serif;
   color: rgba(0, 0, 0, .75);
+  line-height: 2rem;
 }
 
 .container {
@@ -78,7 +79,8 @@ nav .container ul li a:hover {
   margin-bottom: 2rem;
   letter-spacing: -.2rem;
   font-weight: 100;
-  margin-top: 25px;
+  margin-top: 35px;
+  margin-bottom: 55px;
 }
 
 #home-description strong,
@@ -129,10 +131,21 @@ nav .container ul li a:hover {
   padding: 1rem;
 }
 
+#about>div {
+  padding: 0 1rem;
+}
+
 #page-title {
   font-size: 2.5rem;
   text-align: center;
   line-height: 1.25rem;
   margin-bottom: 2rem;
   letter-spacing: -.1rem;
+}
+
+#paragraph1 p,
+#paragraph2 p,
+#paragraph3 p {
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
