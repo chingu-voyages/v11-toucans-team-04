@@ -122,8 +122,3 @@ nav .container ul li a:hover {
   justify-content: center;
   height: 100%;
 }
-
-/* Styling About section */
-#about {
-  min-height: 50vh;
-}
