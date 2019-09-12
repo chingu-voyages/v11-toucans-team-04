@@ -129,9 +129,9 @@ nav .container ul li a:hover {
   padding: 1rem;
 }
 
-#about>div {
-  padding: 0 1rem;
-}
+/* #about>div {
+  width: 300px;
+} */
 
 .page-title {
   font-size: 2.5rem;
