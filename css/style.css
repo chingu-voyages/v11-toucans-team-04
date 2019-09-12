@@ -90,10 +90,9 @@ nav .container ul li a:hover {
 #home-description p {
   color: #fff;
   font-size: 1.6rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 2rem;
   margin-bottom: 2rem;
-  padding: 0 1rem;
 }
 
 .btn {
