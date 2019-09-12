@@ -127,7 +127,7 @@ nav .container ul li a:hover {
 /* Styling About section */
 #about {
   min-height: 50vh;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .page-title {
