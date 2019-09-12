@@ -23,7 +23,7 @@ body {
   justify-content: space-around;
 }
 
-.container-flex > * {
+.container-flex>* {
   margin-bottom: 2rem;
   min-width: 300px;
   flex: 1;
@@ -149,6 +149,12 @@ nav .container ul li a:hover {
   width: 160px;
 }
 
+#paragraph1,
+#paragraph2,
+#paragraph3 {
+  padding: 0 2rem;
+}
+
 #paragraph1 p,
 #paragraph2 p,
 #paragraph3 p {
@@ -156,5 +162,4 @@ nav .container ul li a:hover {
   margin-bottom: 1rem;
   margin-top: 0;
   line-height: 1.6;
-  padding: 0 2rem;
 }
