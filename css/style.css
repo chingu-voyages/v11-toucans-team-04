@@ -12,6 +12,7 @@ body {
 .container {
   font-size: 1.25rem;
   margin: 0 auto;
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -93,7 +94,6 @@ nav .container ul li a:hover {
   font-weight: 100;
   line-height: 2rem;
   margin-bottom: 2rem;
-  padding: 0 1rem;
 }
 
 .btn {
@@ -128,10 +128,6 @@ nav .container ul li a:hover {
   min-height: 50vh;
   padding: 1rem;
 }
-
-/* #about>div {
-  width: 300px;
-} */
 
 .page-title {
   font-size: 2.5rem;
