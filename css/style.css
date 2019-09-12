@@ -144,7 +144,7 @@ nav .container ul li a:hover {
 
 .page-title:after {
   background-color: #55c0ec;
-  bottom: -163px;
+  bottom: 40px;
   content: "";
   height: 3px;
   left: 50%;
