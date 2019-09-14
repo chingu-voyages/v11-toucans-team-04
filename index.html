@@ -1,70 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TickyBot Clone</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+  <head>
+    <title>TickyBot Clone</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Signika:300,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navbar section-->
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#slack">Add to Slack</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--End Navbar-->
 
-        <!--Start of main area-->
-        <main>
-            <!--Start of How It Works Section-->
-            <section id="how-it-works">
-                <h3>How It Works</h3>
+    <!--Start of main area-->
+    <main>
+      <!--Home section-->
+      <section id="home">
+        <div class="container container-flex">
+          <div id="home-description">
+            <h1><strong>Ticky</strong>Bot</h1>
+            <p>
+              Let your team manage their support tickets 100% inside Slack
+            </p>
+            <a class="btn" href="#">
+              <img src="images/slack-icon.svg" alt="slack-icon" />
+              <span>Add to <strong>Slack</strong></span>
+            </a>
+          </div>
+          <div id="home-logo">
+            <img src="images/bot-logo.jpg" width="200px" height="200px" />
+          </div>
+        </div>
+      </section>
+      <!--End Home section-->
 
-                <div class="feature-t`ile">
-                    <div class="img-container">
-                        <img src="img/img-1.svg" class="tile-img" alt="">
-                    </div>
+      <!--About section-->
+      <section id="about">
+        <div class="container container-flex">
+          <h3>What is <strong>Ticky</strong>Bot</h3>
+          <div id="paragraph1">
+            <p>
+              <strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use
+              support tickets on Slack. This way, you don't need to leave your
+              beloved channel to assist your users, if you don't feel like it.
+            </p>
+          </div>
+          <div id="paragraph2">
+            <p>
+              With <strong>Ticky</strong>Bot you can easily check if you've
+              received new tickets, change their status, or write a reply, and
+              the ticket will instantly update itself on our site.
+            </p>
+          </div>
+          <div id="paragraph3">
+            <p>
+              Support requests shouldn't be handled through Slack's direct
+              messages.
+              <br />
+              <em
+                >Image about someone asking silly questions and the workplace
+                admin asking him/her to open a support ticket so other admins
+                could look into issue.</em
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--End About section -->
 
-                    <p>You can add <span>Ticky</span>Bot to your Slack workplace by scrolling down or 
-                        <a href="#">clicking here</a>
-                    </p>
-                </div>
+      <!--Start of How It Works Section-->
+      <section id="how-it-works">
+        <h3>How It Works</h3>
 
-                <div class="feature-tile">
-                    <div class="img-container">
-                        <img src="img/img-2.svg" class="tile-img" alt="">
-                    </div>
+        <div class="feature-t`ile">
+          <div class="img-container">
+            <img src="img/img-1.svg" class="tile-img" alt="" />
+          </div>
 
-                    <p>Your users can open a ticket by 
-                        <code>/ticket</code> and their message into the chat field.
-                    </p>
-                </div>
+          <p>
+            You can add <span>Ticky</span>Bot to your Slack workplace by
+            scrolling down or
+            <a href="#">clicking here</a>
+          </p>
+        </div>
 
-                <div class="feature-tile">
-                    <div class="img-container">
-                        <img src="img/img-3.svg" class="tile-img" alt="">
-                    </div>
+        <div class="feature-tile">
+          <div class="img-container">
+            <img src="img/img-2.svg" class="tile-img" alt="" />
+          </div>
 
-                    <p>Once you or another admin has solved their problems you can type 
-                        <code>/ticket close #id</code> to close the ticket.
-                    </p>
-                </div>
-            </section>
-            <!--End of How It Works Section-->
+          <p>
+            Your users can open a ticket by <code>/ticket</code> and their
+            message into the chat field.
+          </p>
+        </div>
 
-            <!--Start of Call to Action Section-->
-            <section id="cta">
-                <h3>Start Using <span>Ticky</span>Bot Today</h3>
+        <div class="feature-tile">
+          <div class="img-container">
+            <img src="img/img-3.svg" class="tile-img" alt="" />
+          </div>
 
-                <p><span class="">Ticky</span>Bot allows Slack teams to manage their support tickets 100% inside Slack,
-                    without having to switch between different apps.
-                </p>
+          <p>
+            Once you or another admin has solved their problems you can type
+            <code>/ticket close #id</code> to close the ticket.
+          </p>
+        </div>
+      </section>
+      <!--End of How It Works Section-->
 
-                <a>Add to <span>Slack</span></a>
+      <!--Start of Call to Action Section-->
+      <section id="cta">
+        <h3>Start Using <span>Ticky</span>Bot Today</h3>
 
-                <p>...so you don't need to go back and forth with another app.</p>
-            </section>
-            <!--End of Call to Action Section-->
-        </main>
-        <!--End of main area-->
-        
-        <footer>
+        <p>
+          <span class="">Ticky</span>Bot allows Slack teams to manage their
+          support tickets 100% inside Slack, without having to switch between
+          different apps.
+        </p>
 
-        </footer>
-        <script src="js/ticky.js"></script>
-    </body>
+        <a>Add to <span>Slack</span></a>
+
+        <p>...so you don't need to go back and forth with another app.</p>
+      </section>
+      <!--End of Call to Action Section-->
+    </main>
+    <!--End of main area-->
+
+    <footer></footer>
+    <script src="js/ticky.js"></script>
+  </body>
 </html>
