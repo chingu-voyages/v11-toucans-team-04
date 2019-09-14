@@ -23,7 +23,7 @@ body {
   justify-content: space-around;
 }
 
-.container-flex > * {
+.container-flex>* {
   margin-bottom: 2rem;
   min-width: 300px;
   flex: 1;
@@ -121,4 +121,45 @@ nav .container ul li a:hover {
   display: flex;
   justify-content: center;
   height: 100%;
+}
+
+/* Styling About section */
+#about {
+  min-height: 50vh;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.25rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.1rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.page-title:after {
+  background-color: #55c0ec;
+  bottom: -15px;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 160px;
+}
+
+#paragraph1,
+#paragraph2,
+#paragraph3 {
+  padding: 0 2rem;
+}
+
+#paragraph1 p,
+#paragraph2 p,
+#paragraph3 p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.6;
 }
