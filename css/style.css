@@ -163,3 +163,126 @@ nav .container ul li a:hover {
   margin-top: 0;
   line-height: 1.6;
 }
+
+/*How It Works Section*/
+
+#how-it-works h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -.125rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+#how-it-works h3::after {
+  background-color: #55c0ec;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 160px
+}
+
+#how-it-works {
+  background-color: rgb(144, 221, 170);
+  padding: 2rem;
+  min-height: 50vh;
+}
+
+#feature-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-tile {
+  background-color: rgb(64, 89, 107);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.feature-description {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.feature-description p {
+  width: 370px;
+}
+
+code {
+  color: crimson;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tile-img {
+  width: 224px;
+  margin: 4rem 0;
+}
+
+/*Call To Action Section*/
+
+#cta {
+  background-color: rgb(250,250,250);
+  text-align: center;
+  min-height: auto;
+}
+
+#cta-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+#cta h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -.125rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+#cta h3::after {
+  background-color: #55c0ec;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 160px
+}
+
+.cta-button {
+  padding: 1rem;
+  font-size: 1.75rem;
+  max-width: 300px;
+  line-height: 1;
+  border-radius: 4px;
+  color: rgba(237, 237, 237, 0.9);
+  margin: 5rem auto;
+  background-color: rgb(64, 89, 107);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button img {
+  width: 30px;
+}
