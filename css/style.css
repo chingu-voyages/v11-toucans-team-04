@@ -163,3 +163,21 @@ nav .container ul li a:hover {
   margin-top: 0;
   line-height: 1.6;
 }
+
+/* Styling footer */
+footer {
+  background-color: #40596b;
+  color: white;
+  padding: 0.6rem 0;
+  line-height: 0.7rem;
+}
+
+footer p {
+  font-size: 0.825rem;
+  color: hsla(0, 0%, 95%, .75);
+  text-align: center;
+}
+
+footer a{
+  color: inherit;
+}
