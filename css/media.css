@@ -1,0 +1,10 @@
+@media screen and (min-width:768px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  #home-description,
+  #home-logo {
+    padding: 1rem 2rem 0;
+  }
+}

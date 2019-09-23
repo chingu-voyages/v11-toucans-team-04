@@ -23,7 +23,7 @@ body {
   justify-content: space-around;
 }
 
-.container-flex > * {
+.container-flex>* {
   margin-bottom: 2rem;
   min-width: 300px;
   flex: 1;
@@ -64,7 +64,6 @@ nav .container ul li a:hover {
 #home {
   background-color: #55c0ec;
   min-height: calc(100vh - 12rem);
-  display: flex;
 }
 
 #home-description {
@@ -126,6 +125,7 @@ nav .container ul li a:hover {
 /* Styling About section */
 #about {
   min-height: 50vh;
+  padding: 1rem;
 }
 
 .page-title {
@@ -136,6 +136,7 @@ nav .container ul li a:hover {
   letter-spacing: -0.1rem;
   font-weight: 300;
   position: relative;
+  flex-basis: 100%;
 }
 
 .page-title:after {
@@ -149,6 +150,12 @@ nav .container ul li a:hover {
   width: 160px;
 }
 
+#paragraph1,
+#paragraph2,
+#paragraph3 {
+  padding: 0 1.8rem;
+}
+
 #paragraph1 p,
 #paragraph2 p,
 #paragraph3 p {
@@ -156,5 +163,23 @@ nav .container ul li a:hover {
   margin-bottom: 1rem;
   margin-top: 0;
   line-height: 1.6;
-  padding: 0 2rem;
+}
+
+/* Styling footer */
+footer {
+  background-color: #40596b;
+  color: white;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 0.825rem;
+  color: hsla(0, 0%, 95%, .75);
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  padding: 0 1rem;
+}
+
+footer a {
+  color: inherit;
 }
