@@ -33,6 +33,8 @@ body {
 /* Styling navbar */
 #navbar {
   background-color: #40596b;
+  position: fixed;
+  width: 100%;
 }
 
 nav .container ul {
@@ -73,6 +75,9 @@ nav .container ul li a:hover {
 
 #home-description {
   text-align: center;
+  width: 200px;
+  padding: 1rem;
+  margin-top: 5.5rem;
 }
 
 #home-description h1 {
@@ -93,7 +98,6 @@ nav .container ul li a:hover {
 #home-description p {
   color: #fff;
   font-size: 1.6rem;
-  font-weight: 100;
   line-height: 2rem;
   padding: 0 2rem 0.5rem 2rem;
 }
@@ -289,7 +293,8 @@ code {
 }
 
 .cta-button img {
-  width: 30px;
+  width: 30px;}
+  
 /* Styling footer */
 footer {
   background-color: #40596b;
