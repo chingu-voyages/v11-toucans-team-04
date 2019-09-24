@@ -3,8 +3,14 @@
     flex-direction: row;
   }
 
-  #home-description,
-  #home-logo {
-    padding: 1rem 2rem 0;
+  #home-logo svg {
+    height: 400px;
+    width: 400px;
   }
-}
+
+
+  @media screen and (min-width:934px) {
+    #paragraph3 {
+      flex-basis: 100%;
+    }
+  }
