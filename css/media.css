@@ -1,0 +1,16 @@
+@media screen and (min-width:768px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  #home-logo svg {
+    height: 400px;
+    width: 400px;
+  }
+
+
+  @media screen and (min-width:934px) {
+    #paragraph3 {
+      flex-basis: 100%;
+    }
+  }
