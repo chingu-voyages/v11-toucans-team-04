@@ -116,11 +116,34 @@ nav .container ul li a:hover {
   max-width: 300px;
   margin: 0 auto;
   color: inherit;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(240, 240, 240);
+  animation: btn 2s ease;
+}
+
+@keyframes btn {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.98);
+  }
 }
 
 .btn img {
   margin: 0 1rem 0 0;
   width: 2.5rem;
+  transition: transform 0.3s ease-out;
+}
+
+.btn img:hover {
+  transform: rotate(18deg) scale(1.5);
 }
 
 #home-logo {
@@ -240,7 +263,7 @@ code {
 /*Call To Action Section*/
 
 #cta {
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
   text-align: center;
   min-height: auto;
 }
@@ -293,8 +316,9 @@ code {
 }
 
 .cta-button img {
-  width: 30px;}
-  
+  width: 30px;
+}
+
 /* Styling footer */
 footer {
   background-color: #40596b;
@@ -312,4 +336,15 @@ footer p {
 
 footer a {
   color: inherit;
+}
+
+/* Transition features */
+.reveal-item--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-item {
+  transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75),
+    transform 1.5s cubic-bezier(.6, -.5, 0, .75);
 }
