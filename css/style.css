@@ -348,3 +348,22 @@ footer a {
   transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75),
     transform 1.5s cubic-bezier(.6, -.5, 0, .75);
 }
+
+/* Back-to-top button */
+.back-to-top {
+  background-color: #ffd05a;
+  border: 0;
+  border-radius: 4px;
+  bottom: 1rem;
+  cursor: pointer;
+  padding: .5rem .5rem 0;
+  position: fixed;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 200%;
+}
+
+.back-to-top:hover {
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+}
