@@ -16,4 +16,30 @@
       flex-basis: 100%;
     }
   }
-}
+
+  @media screen and (max-width:1300px) {
+    #feature-container {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      grid-row-gap: 10px;
+    }
+
+    .feature-tile {
+      width: 405px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    #feature-container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-row-gap: 20px;
+    }
+
+    .feature-tile {
+      width: 405px;
+    }
+  }
+
+
+
