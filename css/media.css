@@ -8,9 +8,17 @@
     width: 400px;
   }
 
+}
+
 
   @media screen and (min-width:934px) {
     #paragraph3 {
       flex-basis: 100%;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    #feature-container {
+      flex-direction: column;
     }
   }
