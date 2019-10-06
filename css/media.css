@@ -16,9 +16,4 @@
       flex-basis: 100%;
     }
   }
-
-  @media screen and (max-width: 840px) {
-    #feature-container {
-      flex-direction: column;
-    }
-  }
+}
