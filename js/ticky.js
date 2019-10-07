@@ -50,3 +50,12 @@ for(let i = 0; i < navLinks.length; i++) {
       smoothScroll(section, 3000);
     });
 }
+
+function updateTransition() {
+    let animatedElements = document.querySelectorAll('.visible');
+    for(let i = 0; i < animatedElements.length; i++) {
+        animatedElements[i].className = 'reveal-visible';
+    }
+};
+
+window.onload = updateTransition();

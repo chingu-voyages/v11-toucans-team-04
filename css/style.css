@@ -35,6 +35,7 @@ body {
   background-color: #40596b;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 nav .container ul {
@@ -102,7 +103,7 @@ nav .container ul li a:hover {
   padding: 0 2rem 0.5rem 2rem;
 }
 
-.btn {
+#btn {
   background-color: #fff;
   border: 0;
   border-radius: 4px;
@@ -116,11 +117,13 @@ nav .container ul li a:hover {
   max-width: 300px;
   margin: 0 auto;
   color: inherit;
+  transform: scale(0);
 }
 
-.btn img {
+#btn img {
   margin: 0 1rem 0 0;
   width: 2.5rem;
+  transform: rotateY(0);
 }
 
 #home-logo {
@@ -128,6 +131,7 @@ nav .container ul li a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
+  z-index: 0;
 }
 
 /* Styling About section */
@@ -207,10 +211,6 @@ nav .container ul li a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
-  /*justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: space-around;*/
 }
 
 .feature-tile {
@@ -295,10 +295,13 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(0);
 }
 
 .cta-button img {
-  width: 30px;}
+  width: 30px;
+  transform: rotateY(0);
+}
   
 /* Styling footer */
 footer {
@@ -317,4 +320,16 @@ footer p {
 
 footer a {
   color: inherit;
+}
+
+/*Transitions and Animations*/
+.visible {
+  opacity: 0;
+  transform: translateY(-1rem);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1.5s cubic-bezier(.6,-.5,0,.75), transform 1.5s cubic-bezier(.6,-.5,0,.75);
 }
