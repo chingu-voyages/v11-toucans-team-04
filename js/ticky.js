@@ -25,6 +25,20 @@ function smoothScroll(target, duration) {
       };
 }
 
+// ViewPort Helper Function
+function isInView(elem) {
+    let boundingBox = elem.getBoundingClientRect();
+    return (boundingBox.top >= 0);
+};
+
+// Transition Function
+function updateTransition() {
+    let animatedElements = document.querySelectorAll('.animate');
+    for(let i = 0; i < animatedElements.length; i++) {
+        animatedElements[i].className = 'reveal-visible';
+    }
+};
+
 let navLinks = document.querySelectorAll('.nav-link');
 
 for(let i = 0; i < navLinks.length; i++) {
@@ -51,11 +65,18 @@ for(let i = 0; i < navLinks.length; i++) {
     });
 }
 
-function updateTransition() {
-    let animatedElements = document.querySelectorAll('.visible');
-    for(let i = 0; i < animatedElements.length; i++) {
-        animatedElements[i].className = 'reveal-visible';
+window.onload = updateTransition();
+window.onscroll = () => {
+    console.log('Scrolling')
+    let howItWorksSection = document.querySelector('#how-it-works');
+    let cta = document.querySelector('.cta-button');
+    if (isInView(howItWorksSection)) {
+        console.log('true');
+        let featureTiles = document.querySelectorAll('.feature-tile');
+
+        for(let i = 0; i < featureTiles.length; i++) {
+            featureTiles[i].classList.remove('visible');
+            featureTiles[i].classList.add('reveal-visible');
+        } 
     }
 };
-
-window.onload = updateTransition();
