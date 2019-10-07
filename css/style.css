@@ -34,6 +34,7 @@ body {
   background-color: #40596b;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 nav .container ul {
@@ -72,8 +73,8 @@ nav .container ul li a:hover {
 #home-description {
   text-align: center;
   width: 200px;
-  padding: 1rem;
-  margin-top: 5.5rem;
+  /* padding: 1rem; */
+  margin-top: 2rem;
 }
 
 #home-description h1 {
@@ -82,7 +83,7 @@ nav .container ul li a:hover {
   margin-bottom: 2rem;
   letter-spacing: -0.2rem;
   font-weight: 100;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 #home-description strong,
@@ -96,6 +97,7 @@ nav .container ul li a:hover {
   font-size: 1.6rem;
   line-height: 2rem;
   margin-bottom: 2rem;
+  padding: 0 0.5rem;
 }
 
 .btn {
@@ -123,5 +125,5 @@ nav .container ul li a:hover {
   display: flex;
   justify-content: center;
   height: 100%;
-  margin-top: -1rem;
+  /* margin-top: -1rem; */
 }
