@@ -9,6 +9,11 @@ body {
   color: rgba(0, 0, 0, 0.75);
 }
 
+#wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 .container {
   font-size: 1.25rem;
   margin: 0 auto;
@@ -153,190 +158,6 @@ nav .container ul li a:hover {
   height: 100%;
 }
 
-/* Styling About section */
-#about {
-  min-height: 50vh;
-  padding: 1rem;
-}
-
-.page-title {
-  font-size: 2.5rem;
-  text-align: center;
-  line-height: 1.25rem;
-  margin-bottom: 3rem;
-  letter-spacing: -0.1rem;
-  font-weight: 300;
-  position: relative;
-  flex-basis: 100%;
-}
-
-.page-title:after {
-  background-color: #55c0ec;
-  bottom: -15px;
-  content: "";
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 160px;
-}
-
-#paragraph1,
-#paragraph2,
-#paragraph3 {
-  padding: 0 1.8rem;
-}
-
-#paragraph1 p,
-#paragraph2 p,
-#paragraph3 p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  line-height: 1.6;
-}
-
-/*How It Works Section*/
-
-#how-it-works h3 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  letter-spacing: -.125rem;
-  line-height: 1.25;
-  margin-bottom: 2rem;
-  text-align: center;
-  position: relative;
-}
-
-#how-it-works h3::after {
-  background-color: #55c0ec;
-  bottom: 0;
-  content: "";
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 160px
-}
-
-#how-it-works {
-  background-color: rgb(144, 221, 170);
-  padding: 2rem;
-  min-height: 50vh;
-}
-
-#feature-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.feature-tile {
-  background-color: rgb(64, 89, 107);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.feature-description {
-  background-color: rgb(255, 255, 255);
-  padding: 1rem;
-}
-
-.feature-description p {
-  width: 370px;
-}
-
-code {
-  color: crimson;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.tile-img {
-  width: 224px;
-  margin: 4rem 0;
-}
-
-/*Call To Action Section*/
-
-#cta {
-  background-color: rgb(250, 250, 250);
-  text-align: center;
-  min-height: auto;
-}
-
-#cta-container {
-  width: 60%;
-  margin: 0 auto;
-  padding: 1rem;
-  font-size: 1.25rem;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-#cta h3 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  letter-spacing: -.125rem;
-  line-height: 1.25;
-  margin-bottom: 2rem;
-  text-align: center;
-  position: relative;
-}
-
-#cta h3::after {
-  background-color: #55c0ec;
-  bottom: 0;
-  content: "";
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 160px
-}
-
-.cta-button {
-  padding: 1rem;
-  font-size: 1.75rem;
-  max-width: 300px;
-  line-height: 1;
-  border-radius: 4px;
-  color: rgba(237, 237, 237, 0.9);
-  margin: 5rem auto;
-  background-color: rgb(64, 89, 107);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cta-button img {
-  width: 30px;
-}
-
-/* Styling footer */
-footer {
-  background-color: #40596b;
-  color: white;
-  padding: 1rem 0;
-}
-
-footer p {
-  font-size: 0.825rem;
-  color: hsla(0, 0%, 95%, .75);
-  text-align: center;
-  margin: 0 0 0.5rem 0;
-  padding: 0 1rem;
-}
-
-footer a {
-  color: inherit;
-}
 
 /* Transition features */
 .reveal-item--visible {
@@ -349,10 +170,10 @@ footer a {
     transform 1.5s cubic-bezier(.6, -.5, 0, .75);
 }
 
-/* Back-to-top button */
-.back-to-top {
+/* Scroll to top button */
+#top-scroll {
   background-color: #ffd05a;
-  border: 0;
+  border: none;
   border-radius: 4px;
   bottom: 1rem;
   cursor: pointer;
@@ -361,9 +182,11 @@ footer a {
   right: 1rem;
   text-decoration: none;
   font-size: 200%;
+  visibility: hidden;
+  transition: opacity 0.5s;
 }
 
-.back-to-top:hover {
+#top-scroll:hover {
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   transform: scale(0.95);
 }
