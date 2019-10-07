@@ -160,7 +160,7 @@ nav .container ul li a:hover {
 
 
 /* Transition features */
-.reveal-item--visible {
+/* .reveal-item--visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -168,7 +168,7 @@ nav .container ul li a:hover {
 .reveal-item {
   transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75),
     transform 1.5s cubic-bezier(.6, -.5, 0, .75);
-}
+} */
 
 /* Scroll to top button */
 #top-scroll {

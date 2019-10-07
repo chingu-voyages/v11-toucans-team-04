@@ -19,15 +19,15 @@ window.onload = function () {
     }
   }
 
-  // const scrollToTop = () => {
-  //   const c = document.documentElement.scrollTop || document.body.scrollTop;
-  //   if (c > 0) {
-  //     window.requestAnimationFrame(scrollToTop);
-  //     window.scrollTo(0, c - c / 8);
-  //   }
-  // };
-
-  // upScroll.onclick = function () {
-  //   scrollToTop();
-  // }
+  // Adding smooth scrolling to anchors
+  var anchors = document.getElementsByClassName("smooth-scroll")
+  Array.prototype.forEach.call(anchors, function (a) {
+    var el = document.getElementById(a.href.match(/#.*$/)[0].substring(1));
+    a.addEventListener("click", function (event) {
+      event.preventDefault();
+      el.scrollIntoView({
+        behavior: "smooth"
+      });
+    })
+  })
 }
