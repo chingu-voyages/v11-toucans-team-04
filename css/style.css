@@ -214,8 +214,10 @@ nav .container ul li a:hover {
 
 #feature-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 10px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .feature-tile {
@@ -236,6 +238,7 @@ nav .container ul li a:hover {
 
 .feature-description p {
   width: 370px;
+  height: 50px;
 }
 
 code {
