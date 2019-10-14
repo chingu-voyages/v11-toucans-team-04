@@ -33,29 +33,7 @@
 
 // let navLinks = document.querySelectorAll('.nav-link');
 
-// for (let i = 0; i < navLinks.length; i++) {
-//   navLinks[i].addEventListener('click', function (e) {
-//     let section = '';
-//     switch (navLinks[i].text) {
-//       case 'Home':
-//         section = '#home';
-//         break;
-//       case 'About':
-//         section = '#about';
-//         break;
-//       case 'Features':
-//         section = '#how-it-works';
-//         break;
-//       case 'Add to Slack':
-//         section = '#cta';
-//         break;
-//       default:
-//         section = '#home';
-//         break;
-//     }
-//     smoothScroll(section, 3000);
-//   });
-// }
+observer.observe(featureContainer);
 
 // Transition Function
 function updateTransition() {
