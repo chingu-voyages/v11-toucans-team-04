@@ -50,20 +50,13 @@ function updateTransition() {
 }
 
 window.onload = updateTransition();
-window.onscroll = () => {
-  console.log('Scrolling')
-  let howItWorksSection = document.querySelector('#how-it-works');
-  let cta = document.querySelector('.cta-button');
-  if (isInView(howItWorksSection)) {
-    console.log('true');
-    let featureTiles = document.querySelectorAll('.feature-tile');
-
-    for (let i = 0; i < featureTiles.length; i++) {
-      featureTiles[i].classList.remove('visible');
-      featureTiles[i].classList.add('reveal-visible');
-    }
-  }
-};
+// window.onscroll = () => {
+//   console.log('Scrolling')
+//   let howItWorksSection = document.querySelector('#how-it-works');
+//   let cta = document.querySelector('.cta-button');
+//   if (isInView(howItWorksSection)) {
+//     console.log('true');
+//     let featureTiles = document.querySelectorAll('.feature-tile');
 
 //Formatting scroll-to-top button
 window.onload = function() {
