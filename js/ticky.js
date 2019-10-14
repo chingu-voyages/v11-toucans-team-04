@@ -31,7 +31,6 @@
 //   return (boundingBox.top >= 0);
 // };
 
-
 // let navLinks = document.querySelectorAll('.nav-link');
 
 // for (let i = 0; i < navLinks.length; i++) {
@@ -60,59 +59,57 @@
 
 // Transition Function
 function updateTransition() {
-  let animatedElements = document.querySelectorAll('.animate');
+  let animatedElements = document.querySelectorAll(".animate");
   for (let i = 0; i < animatedElements.length; i++) {
-    animatedElements[i].className = 'reveal-visible';
+    animatedElements[i].className = "reveal-visible";
   }
-};
+}
 
 window.onload = updateTransition();
-window.onscroll = () => {
-  console.log('Scrolling')
-  let howItWorksSection = document.querySelector('#how-it-works');
-  let cta = document.querySelector('.cta-button');
-  if (isInView(howItWorksSection)) {
-    console.log('true');
-    let featureTiles = document.querySelectorAll('.feature-tile');
+// window.onscroll = () => {
+//   console.log('Scrolling')
+//   let howItWorksSection = document.querySelector('#how-it-works');
+//   let cta = document.querySelector('.cta-button');
+//   if (isInView(howItWorksSection)) {
+//     console.log('true');
+//     let featureTiles = document.querySelectorAll('.feature-tile');
 
-    for (let i = 0; i < featureTiles.length; i++) {
-      featureTiles[i].classList.remove('visible');
-      featureTiles[i].classList.add('reveal-visible');
-    }
-  }
-};
-
+//     for (let i = 0; i < featureTiles.length; i++) {
+//       featureTiles[i].classList.remove('visible');
+//       featureTiles[i].classList.add('reveal-visible');
+//     }
+//   }
+// };
 
 //Formatting scroll-to-top button
-window.onload = function () {
+window.onload = function() {
   var wrapper = document.getElementById("wrapper");
   var upScroll = document.getElementById("top-scroll");
 
-  wrapper.onscroll = function () {
-
+  wrapper.onscroll = function() {
     var timer;
     if (wrapper.scrollTop < 400) {
       upScroll.style.opacity = "0";
-      timer = setTimeout(function () {
+      timer = setTimeout(function() {
         if (wrapper.scrollTop < 400) {
           upScroll.style.visibility = "hidden";
         }
-      }, 500)
+      }, 500);
     } else {
       upScroll.style.visibility = "visible";
       upScroll.style.opacity = "1";
     }
-  }
+  };
 
   // Adding smooth scrolling to anchors
-  var anchors = document.getElementsByClassName("smooth-scroll")
-  Array.prototype.forEach.call(anchors, function (a) {
+  var anchors = document.getElementsByClassName("smooth-scroll");
+  Array.prototype.forEach.call(anchors, function(a) {
     var el = document.getElementById(a.href.match(/#.*$/)[0].substring(1));
-    a.addEventListener("click", function (event) {
+    a.addEventListener("click", function(event) {
       event.preventDefault();
       el.scrollIntoView({
         behavior: "smooth"
       });
-    })
-  })
-}
+    });
+  });
+};
