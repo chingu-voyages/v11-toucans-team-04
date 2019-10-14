@@ -228,6 +228,8 @@ nav .container ul li a:hover {
   border-radius: 4px;
   text-align: center;
   width: 405px;
+  transform: translateX(-1000%);
+  opacity: 0;
 }
 
 .feature-description {
@@ -353,6 +355,12 @@ footer a {
   transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75);
 }
 
+.feature-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75);
+}
+
 .head {
   animation-direction: reverse;
   animation-duration: 12s;
@@ -387,6 +395,17 @@ footer a {
     transform: rotate(-10deg) scale(1);
   }
 }
+
+/*@keyframes animateTiles {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}*/
 
 #top-scroll {
   background-color: #ffd05a;

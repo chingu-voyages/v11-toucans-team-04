@@ -25,11 +25,21 @@ function smoothScroll(target, duration) {
   };
 }
 
-// ViewPort Helper Function
-function isInView(elem) {
-  let boundingBox = elem.getBoundingClientRect();
-  return (boundingBox.top >= 0);
-};
+// Intersection Observer
+let featureContainer = document.querySelector('#how-it-works');
+let featureTiles = document.querySelectorAll('.feature-tile');
+let observer = new IntersectionObserver((section) => {
+    console.log('Section is in view!!');
+    console.log(section[0].isVisible);
+    if(section[0].intersectionRatio > 0) {
+      let featureTiles = document.querySelectorAll('.feature-tile');
+      featureTiles.forEach(tile => {
+        tile.classList.add('feature-visible');
+      });
+  }
+});
+
+observer.observe(featureContainer);
 
 // Transition Function
 function updateTransition() {
@@ -84,12 +94,12 @@ window.onscroll = () => {
 
 //Formatting scroll-to-top button
 window.onload = function () {
-  var wrapper = document.getElementById("wrapper");
-  var upScroll = document.getElementById("top-scroll");
+  let wrapper = document.getElementById("wrapper");
+  let upScroll = document.getElementById("top-scroll");
 
   wrapper.onscroll = function () {
 
-    var timer;
+    let timer;
     if (wrapper.scrollTop < 400) {
       upScroll.style.opacity = "0";
       timer = setTimeout(function () {
@@ -104,9 +114,9 @@ window.onload = function () {
   }
 
   // Adding smooth scrolling to anchors
-  var anchors = document.getElementsByClassName("smooth-scroll")
+  let anchors = document.getElementsByClassName("smooth-scroll")
   Array.prototype.forEach.call(anchors, function (a) {
-    var el = document.getElementById(a.href.match(/#.*$/)[0].substring(1));
+    let el = document.getElementById(a.href.match(/#.*$/)[0].substring(1));
     a.addEventListener("click", function (event) {
       event.preventDefault();
       el.scrollIntoView({
