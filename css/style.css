@@ -81,7 +81,6 @@ nav .container ul li a:hover {
 
 #home-description {
   text-align: center;
-  /* width: 200px; */
   margin-top: 2rem;
 }
 
@@ -219,7 +218,6 @@ nav .container ul li a:hover {
   align-items: center;
   border-radius: 4px;
   text-align: center;
-  width: 405px;
   transform: translateX(-1000%);
   opacity: 0;
 }
