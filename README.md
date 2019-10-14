@@ -1,8 +1,22 @@
-# TickyBot Clone
-Add-project-description-here | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
+Tickybot Landing Page Clone | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
 
 # Overview
-We chose to clone the TickyBot website for our first voyage to get used to the agile methodology as well as to get experience working in a remote team.
+We chose to clone the TickyBot website for our first voyage to get used to the agile methodology as well as to get experience working in a remote team. By cloning this template we were able to improve HTML5, CSS3, and JavaScript skills. Layouts were managed with flexbox and media queries were used to create breakpoints for tablets and mobile devices.
+
+# Project:
+Recreate the Tickybot landing page: https://tickybott.herokuapp.com/
 
 # Features
 In addition to the original features of the TickyBot website we have added a sticky nav and a smooth scrolling animation.
+
+# Finished Project:
+// add link here //
+
+From the repo:
+
+  1. Clone this project locally.
+  2. Open the index.html file to ensure proper functionality.
+  3. Add your own content and enjoy your new, responsive site!
+
+
+
