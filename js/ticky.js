@@ -1,29 +1,3 @@
-//SmoothScrolling Animation
-function smoothScroll(target, duration) {
-  let newTarget = document.querySelector(target);
-  let targetPosition = newTarget.getBoundingClientRect().top + newTarget.getBoundingClientRect().left + window.scrollY;
-  let startPosition = window.pageYOffset;
-  let distance = targetPosition - startPosition;
-  let startTime = null;
-
-  function animateScroll(currentTime) {
-    if (startTime === null) {
-      startTime = currentTime;
-    }
-    let timeElapsed = currentTime - startTime;
-    let run = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animateScroll);
-  }
-  requestAnimationFrame(animateScroll);
-
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t * t + b;
-    t -= 2;
-    return c / 2 * (t * t * t + 2) + b;
-  };
-}
 
 // Intersection Observer
 let section = document.querySelector('#how-it-works');
@@ -38,8 +12,6 @@ let observer = new IntersectionObserver((section) => {
 
 observer.observe(section);
 
-let navLinks = document.querySelectorAll('.nav-link');
-
 
 // Transition Function
 function updateTransition() {
@@ -50,13 +22,6 @@ function updateTransition() {
 }
 
 window.onload = updateTransition();
-// window.onscroll = () => {
-//   console.log('Scrolling')
-//   let howItWorksSection = document.querySelector('#how-it-works');
-//   let cta = document.querySelector('.cta-button');
-//   if (isInView(howItWorksSection)) {
-//     console.log('true');
-//     let featureTiles = document.querySelectorAll('.feature-tile');
 
 //Formatting scroll-to-top button
 window.onload = function() {
