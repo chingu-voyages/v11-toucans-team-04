@@ -361,7 +361,6 @@ footer a {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-name: animateRobot;
-  transform: rotate(0) scale(1);
   transform-origin: 245px 100px;
 }
 
