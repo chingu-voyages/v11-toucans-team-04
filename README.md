@@ -16,5 +16,5 @@ From the repo:
   3. Add your own content and enjoy your new, responsive site!
 
 # Building Notes
-https://www.notion.so/ynhingo/Building-TickyBot-Landing-Page-23f82dda0d9f4daaa91e36e098f5b7a8
+https://www.notion.so/nhiyngo/Building-TickyBot-Landing-Page-23f82dda0d9f4daaa91e36e098f5b7a8
 
